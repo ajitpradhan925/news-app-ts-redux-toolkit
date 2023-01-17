@@ -1,4 +1,5 @@
 export interface UserAPIEntity {
     id: Number;
-    title: String;
+    first_name: String;
+    last_name: String;
 }
