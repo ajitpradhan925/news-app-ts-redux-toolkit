@@ -36,6 +36,8 @@ export const userSlice = createSlice({
         // `fetchTodos.fulfilled` is fired:
         builder.addCase(GetUser.fulfilled,
             (state, { payload }) => {
+                console.log("payload ", payload);
+                
                 // We add all the new todos into the state
                 // and change `status` back to `idle`:
                 state.list.push(...payload);

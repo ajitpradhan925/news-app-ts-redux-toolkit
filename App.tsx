@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import RootNavigation from './src/core/routes'
+import EStyleSheet from 'react-native-extended-stylesheet';
+import { Provider } from "react-redux";
+import store from './src/data/redux/store';
 
 function App() {
+
+  useEffect(() => {
+    EStyleSheet.build();
+  }, [])
+
   return (
-    <RootNavigation />
+    <Provider store={store}>
+      <RootNavigation />
+    </Provider>
   )
 }
 
