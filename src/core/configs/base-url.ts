@@ -1,5 +1,7 @@
-const localServer: string = 'https://reqres.in/api';
-const prodServer: string = 'https://reqres.in/api';
+import _const from "./const";
+
+const localServer: string = _const.BASE_URL_TEST;
+const prodServer: string = _const.BASE_URL_PROD;
 
 const isUnderDevelopment = __DEV__;
 
