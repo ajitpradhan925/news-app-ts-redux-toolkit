@@ -1,5 +1,13 @@
-export interface UserAPIEntity {
-    id: Number;
-    first_name: String;
-    last_name: String;
+export interface LoginRequest {
+    email: string;
+    password: string;
+}
+
+export interface UserResponse {
+    _id: string;
+    name: string;
+    email: string;
+    avatar: string;
+    password: string;
+    token: string;
 }

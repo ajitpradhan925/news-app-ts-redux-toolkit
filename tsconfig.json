@@ -4,10 +4,12 @@
     "baseUrl": "src", // This must be specified if "paths" is.
     "paths": {
         "@app*": ["/*"],
-        "@core/*": ["core/*"],
         "@domain/*": ["domain/*"],
         "@presentation/*": ["presentation/*"],
-        "@assets/*": ["assets/*"]
+        "@configs/*": ["configs/*"],
+        "@navigations/*": ["navigations/*"],
+        "@assets/*": ["assets/*"],
+        "@data/*": ["data/*"]
     },
   }
 }

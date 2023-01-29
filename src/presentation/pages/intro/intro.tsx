@@ -4,7 +4,7 @@ import AppIntroSlider from 'react-native-app-intro-slider';
 import Ion from 'react-native-vector-icons/dist/Ionicons';
 import {useNavigation} from '@react-navigation/native';
 import {styles} from './styles';
-import {slides} from '@core/configs/const';
+import {slides} from '@configs/const';
 
 const Intro = ({...props}) => {
   const {navigation} = props;
@@ -57,7 +57,7 @@ const Intro = ({...props}) => {
 
   const _onEndReached = () => {
     // updateOnboarding(true);
-    navigation.navigate('home');
+    navigation.navigate('login');
   };
 
   return (

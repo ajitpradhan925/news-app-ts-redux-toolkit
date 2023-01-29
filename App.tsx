@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import RootNavigation from './src/core/navigation'
+import RootNavigation from './src/navigations'
 import EStyleSheet from 'react-native-extended-stylesheet';
 import { Provider } from "react-redux";
-import store from './src/data/redux/store';
+import store from './src/store';
 
 function App() {
 

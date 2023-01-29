@@ -1,8 +1,6 @@
 import axios from 'axios'
 import defaultConfig from './base-url';
 
-console.log("BASE_PATH ", defaultConfig.BASE_PATH);
-
 export default axios.create({
   baseURL: defaultConfig.BASE_PATH
 });

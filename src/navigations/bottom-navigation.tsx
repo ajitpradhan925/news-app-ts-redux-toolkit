@@ -7,7 +7,7 @@ import {
   Notification,
 } from '@presentation/pages';
 import Icon from 'react-native-vector-icons/dist/Ionicons';
-import { tabColors } from '@core/configs/colors';
+import { tabColors } from '@configs/colors';
 
 const Tab = createBottomTabNavigator();
 

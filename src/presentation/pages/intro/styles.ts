@@ -1,7 +1,6 @@
-import _const from '@core/configs/const';
+import _const from '@configs/const';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
-console.log(_const);
 const { THEME: {primary, secondary} } = _const;
 
 export const styles = () =>

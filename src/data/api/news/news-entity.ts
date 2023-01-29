@@ -1,4 +1,7 @@
 export interface NewsAPIEntity {
-    id: Number;
-    title: String;
+    _id: String;
+    view: Number;
+    addToSlider: Boolean;
+    content: String;
+    category: String
 }
