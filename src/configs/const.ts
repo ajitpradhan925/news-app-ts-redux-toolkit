@@ -2,8 +2,8 @@ import { DefaultTheme, DarkTheme } from "@react-navigation/native";
 
 export default {
     asyncStorageKey: "NewsApp001",
-    BASE_URL_TEST: "https://5e39-115-42-33-161.in.ngrok.io/api/",
-    BASE_URL_PROD: "https://5e39-115-42-33-161.in.ngrok.io/api/",
+    BASE_URL_TEST: "https://2c93-115-42-33-161.in.ngrok.io/api/",
+    BASE_URL_PROD: "https://2c93-115-42-33-161.in.ngrok.io/api/",
     THEME: {
         primary: "#062743",
         secondary: "#182952",
@@ -100,3 +100,5 @@ export const slides = [
       text: "Add to your favorite read list and also you can add comments.",
     },
   ];
+
+export const LOGIN_SUCCESS_MSG = "Successfully Logged In."

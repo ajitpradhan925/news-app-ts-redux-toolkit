@@ -1,9 +1,11 @@
+import newsSlice from "@domain/news-slice";
 import userSlice from "@domain/user-slice";
 import { configureStore } from "@reduxjs/toolkit";
 
 let store = configureStore({
     reducer: {
-        user: userSlice
+        user: userSlice,
+        news: newsSlice
     }
     
 })

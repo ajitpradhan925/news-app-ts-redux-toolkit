@@ -16,6 +16,8 @@ import {showSnackbar, signInValidationSchema} from '@configs/utils';
 import {moderateScale} from 'react-native-size-matters';
 import {useAppDispatch, useAppSelector} from '@configs/redux-hooks';
 import { LoginUser } from '@domain/user-slice';
+import { LOGIN_SUCCESS_MSG } from '@configs/const';
+import { setToken } from '@configs/axios-config';
 
 const Login = ({...props}) => {
   const [showSpinner, setShowSpinner] = useState(false);
@@ -30,6 +32,14 @@ const Login = ({...props}) => {
   const {user, error = "", status} = useAppSelector(state => state.user);
 
   console.log('users ', {user, error, status})
+  
+  useEffect(() => {
+    if (user.token) {
+      showSnackbar(LOGIN_SUCCESS_MSG, 'SUCCESS');
+      setToken(user.token);
+      navigation.replace('home');
+    }
+  }, [user]);
 
   useEffect(() => {
     if(error)

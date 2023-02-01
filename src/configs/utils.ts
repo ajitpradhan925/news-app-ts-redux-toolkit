@@ -2,11 +2,25 @@ import { ToastAndroid } from "react-native";
 import Snackbar from "react-native-snackbar";
 import * as yup from 'yup';
 
-export const showSnackbar = (msg: string, type = 'INFO') => {
+export const showSnackbar = (msg: string, type = 'SUCCESS') => {
+    let backgroundColor = "#038749";
+    switch(type) {
+        case 'ERROR':
+            backgroundColor = "#f00";
+            break;
+        case 'SUCCESS':
+            backgroundColor = "#038749";
+            break;
+        case 'INFO':
+            backgroundColor = "#61b2cc";
+            break;
+        default: 
+            backgroundColor = "#038749";
+    }
     Snackbar.show({
         text: msg,
         duration: Snackbar.LENGTH_SHORT,
-        backgroundColor: type == 'ERROR' ? '#f00' : '#000',
+        backgroundColor: backgroundColor,
     });
 }
 
